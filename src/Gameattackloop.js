@@ -1,5 +1,5 @@
-import makeattack_DOM from "/src/grid.js";
-import computerplay from "/src/computerplay.js";
+import makeattack_DOM from "./grid.js";
+import computerplay from "./computerplay.js";
 function testwinner(enemy_oftheplayer, who) {
  if (enemy_oftheplayer.gameboard.isAllSunk()) {
   document.querySelector(".winnercontainer").style.display = "flex";
