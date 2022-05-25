@@ -1,5 +1,5 @@
-import { converttoarray } from "/src/convertarraytostring.js";
-import { testposition } from "/src/randomizechoice.js";
+import { converttoarray } from "./convertarraytostring.js";
+import { testposition } from "./randomizechoice.js";
 export { playerchoice };
 let letter = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
 export default function add_drop_drag_events() {
