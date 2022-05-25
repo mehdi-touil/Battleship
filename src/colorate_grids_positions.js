@@ -1,4 +1,4 @@
-import generateChoice from "/src/randomizechoice.js";
+import generateChoice from "./randomizechoice.js";
 //colorate my ships in grid
 function resetcolors(blockid_ends) {
  var blocks = document.querySelectorAll(".block" + blockid_ends);
