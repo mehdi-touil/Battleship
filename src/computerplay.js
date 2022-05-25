@@ -1,4 +1,4 @@
-import makeattack_DOM from "/src/grid.js";
+import makeattack_DOM from "./grid.js";
 async function wait() {
  await new Promise((resolve) => setTimeout(resolve, 1000));
 }
