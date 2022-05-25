@@ -1,6 +1,6 @@
-import Gameattackloop from "/src/Gameattackloop.js";
-import Player from "/src/Player.js";
-import generateChoice from "/src/randomizechoice.js";
+import Gameattackloop from "./Gameattackloop.js";
+import Player from "./Player.js";
+import generateChoice from "./randomizechoice.js";
 export { player1 };
 let player1 = new Player(); //new player
 let computer = new Player(); //computer
