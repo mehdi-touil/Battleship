@@ -1,0 +1,28 @@
+import Gameboard from "./Gameboard";
+test("Gameboard", () => {
+ let mygame = Gameboard();
+ mygame.ships.carrier.position = ["A1", "A2", "A3", "A4", "A5"];
+ mygame.ships.battleship.position = ["B1", "B2", "B3", "B4"];
+ mygame.ships.cruiser.position = ["C1", "C2", "C3"];
+ mygame.ships.submarine.position = ["D1", "D2", "D3"];
+ mygame.ships.destroyer.position = ["E1", "E2"];
+ mygame.receiveAttack("A", 1);
+ mygame.receiveAttack("A", 2);
+ mygame.receiveAttack("A", 3);
+ mygame.receiveAttack("A", 4);
+ mygame.receiveAttack("A", 5);
+ mygame.receiveAttack("B", 1);
+ mygame.receiveAttack("B", 2);
+ mygame.receiveAttack("B", 3);
+ mygame.receiveAttack("B", 4);
+ mygame.receiveAttack("C", 1);
+ mygame.receiveAttack("C", 2);
+ mygame.receiveAttack("C", 3);
+ mygame.receiveAttack("D", 1);
+ mygame.receiveAttack("D", 2);
+ mygame.receiveAttack("D", 3);
+ mygame.receiveAttack("E", 1);
+ mygame.receiveAttack("E", 2);
+ expect(mygame.ships.carrier.isSunk()).toBe(true);
+ expect(mygame.isAllSunk()).toBe(true);
+});
