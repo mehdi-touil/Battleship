@@ -1,4 +1,4 @@
-import converttostring from "/src/convertarraytostring.js";
+import converttostring from "./convertarraytostring.js";
 function searchForArray(haystack, needle) {
  // used for saying that [1,1] is in [[1,1],[5,2]]
  var i, j, current;
