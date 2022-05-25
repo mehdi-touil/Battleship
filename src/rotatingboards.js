@@ -1,4 +1,4 @@
-import string_length from "/src/string_length.js";
+import string_length from "./string_length.js";
 export default function rotate_boards_events() {
  document.querySelectorAll(".board").forEach((elem) => {
   elem.addEventListener("dblclick", () => {
