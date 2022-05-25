@@ -1,4 +1,4 @@
-import ship from "/src/ship.js";
+import ship from "./ship.js";
 export default function Gameboard() {
  let carrier = ship(5, "carrier");
  let battleship = ship(4, "battleship");
